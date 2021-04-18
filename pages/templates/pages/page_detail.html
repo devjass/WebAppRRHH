@@ -1,7 +1,7 @@
 {% extends 'core/base.html' %}
 {% load static %}
 {% block nombre1 %}{{page.nombre1}}{% endblock %}
-{% block content %}
+{% block nombre2 %}
 {% include 'pages/includes/pages_menu.html' %}
 <main role="main">
   <div class="container">
@@ -9,7 +9,7 @@
       <div class="col-md-9 mx-auto">
         <h2 class="section-heading mb-4">{{page.nombre1}}</h2>
         <div>
-          {{page.content|safe}}
+          {{page.nombre2|safe}}
           {% if request.user.is_staff %}
             <p><a href="{% url 'pages:update' page.id %}">Editar</a></p>
           {% endif %}
