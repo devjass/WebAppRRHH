@@ -3,7 +3,7 @@ from .models import Page
 
 # Register your models here.
 class PageAdmin(admin.ModelAdmin):
-    list_display = ('title', 'order')
+    list_display = ('nombre1', 'order')
 
     class Media:
         css = {

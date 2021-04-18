@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
 {% load static %}
-{% block title %}Actualizar página{% endblock %}
+{% block Nombre1 %}Actualizar página{% endblock %}
 {% block content %}
 {% include 'pages/includes/pages_menu.html'%}
 <main role="main">
@@ -11,7 +11,7 @@
           {% if 'ok' in request.GET%}
             <p style="color:green;">
               Página editada correctamente.
-              <a href="{% url 'pages:page' page.id page.title|slugify %}">Haz clic aquí para ver el resultado.</a>
+              <a href="{% url 'pages:page' page.id page.Nombre1|slugify %}">Haz clic aquí para ver el resultado.</a>
             </p>
           {% endif%}
             <form action="" method="post">{% csrf_token %}

@@ -5,9 +5,9 @@ class PageForm(forms.ModelForm):
 
     class Meta:
         model = Page
-        fields = ['title', 'content','order']
+        fields = ['nombre1', 'nombre2','order']
         widgets = {
-            'title': forms.TextInput(attrs={'class':'form-control'}),
-            'content': forms.Textarea(attrs={'class':'form-control'}),
+            'nombre1': forms.TextInput(attrs={'class':'form-control'}),
+            'nombre2': forms.Textarea(attrs={'class':'form-control'}),
             'order': forms.NumberInput(attrs={'class':'form-control'}),
         }

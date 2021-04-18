@@ -5,7 +5,7 @@ class HomePageView(TemplateView):# Clase que devuelve una plantilla html
     template_name = "core/home.html"
 
     def get(self, request, *args, **kwargs): #Esta es el método que procesa la respuesta de esta vista y la envia renderizada
-        return render(request, self.template_name, {'title':"Web App Gestión de Talento Humano"})
+        return render(request, self.template_name, {'Nombre1':"Web App Gestión de Talento Humano"})
 
 
 class SamplePageView(TemplateView):
