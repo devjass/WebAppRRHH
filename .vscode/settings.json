@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\jaime\\.virtualenvs\\Aplicacion_RRHH_Cidenet-dgjtiXLG\\Scripts\\python.exe",
+    "[python]": {
+
+
+        "editor.wordBasedSuggestions": false
+    },
+    "python.linting.pylintArgs": ["--load-plugins=pylint_django", ]
+}
