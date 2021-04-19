@@ -9,3 +9,10 @@ def validarMayusculas(value):
             gl('Nombre:%(value)s Tiene que ser todas Mayúsculas'),
             params={'value': value},
         )
+
+def validarNE(value):
+    if("Ñ" in value):
+        raise ValidationError(
+            gl('Nombre:%(value)s No puede tener Ñ'),
+            params={'value': value},
+        )
