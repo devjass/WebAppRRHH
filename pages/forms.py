@@ -8,6 +8,6 @@ class PageForm(forms.ModelForm):
         fields = ['nombre1', 'nombre2','order']
         widgets = {
             'nombre1': forms.TextInput(attrs={'class':'form-control'}),
-            'nombre2': forms.TextInput(attrs={'class':'form-control'}),
+            'nombre2': forms.Textarea(attrs={'class':'form-control'}),
             'order': forms.NumberInput(attrs={'class':'form-control'}),
         }
